@@ -1,0 +1,16 @@
+.logo {
+    font-family: $secondary-font;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: $accent-color;
+
+
+    &__accent--dark {
+        color: #000000;
+    }
+
+    &__accent--light {
+        color: $primary-white-color;
+    }
+}
