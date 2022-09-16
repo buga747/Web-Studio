@@ -1,14 +1,24 @@
 // features
 .features {
-    padding-bottom: 0;
+    @include breakpoint-min($desktop) {
+        padding-bottom: 0;
+    }
 }
 
-.feature-set {
-    display: flex;
-    gap: 30px;
+@media screen and (max-width:767px) {
+    .feature-set__item:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
 
+    .feature-set__subtitle {
+        text-align: center;
+    }
+}
+
+
+.feature-set {
     &__item {
-        width: 270px;
+        width: 100%;
     }
 
     &__icon-block {
@@ -16,7 +26,7 @@
         align-items: center;
         justify-content: center;
 
-        width: 270px;
+        width: 100%;
         border-radius: 4px;
         margin-bottom: 30px;
         background-color: $section-background-color;
@@ -26,8 +36,6 @@
         margin-top: 25px;
         margin-bottom: 25px;
     }
-
-
 
     &__subtitle {
         line-height: 1.14;
@@ -41,4 +49,23 @@
         line-height: 1.71;
     }
 
+    @include breakpoint-min($tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &__item {
+            width: 354px;
+        }
+    }
+
+    @include breakpoint-min($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &__item {
+            width: 270px;
+        }
+    }
 }

@@ -1,4 +1,11 @@
+@media screen and (max-width: 1199px) {
+    .activity-section {
+        display: none;
+    }
+}
+
 .activity {
+
     display: flex;
     gap: 30px;
 
@@ -21,5 +28,4 @@
         padding-top: 27px;
         padding-bottom: 27px;
     }
-
 }

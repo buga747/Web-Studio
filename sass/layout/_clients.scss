@@ -1,5 +1,6 @@
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 
     &__link {
@@ -9,10 +10,19 @@
 
         border: 1px solid $icons-color;
         border-radius: var(--border-radius);
-        width: 170px;
+        width: 210px;
         height: 92px;
         fill: $icons-color;
-        @include transition-two(border-color, fill)
+
+        @include transition-two(border-color, fill);
+
+        @include breakpoint-min($tablet) {
+            width: 226px;
+        }
+
+        @include breakpoint-min($desktop) {
+            width: 170px;
+        }
     }
 
     &__link:hover,

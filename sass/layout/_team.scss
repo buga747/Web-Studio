@@ -2,10 +2,36 @@
     background-color: $section-background-color;
 }
 
-.team-list {
-    display: flex;
-    gap: 30px;
+@media screen and (max-width:767px) {
+    .team-member:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
 }
+
+
+.team-list {
+    @include breakpoint-min($tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .team-member {
+            width: 354px;
+        }
+    }
+
+    @include breakpoint-min($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .team-member {
+            width: 270px;
+        }
+    }
+
+}
+
 
 .team-member {
     background-color: $primary-white-color;
@@ -61,5 +87,7 @@
         font-size: 16px;
         margin-bottom: 16px;
     }
+
+
 
 }
