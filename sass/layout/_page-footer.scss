@@ -1,10 +1,5 @@
 // footer
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
 .footer {
     background-color: $dark-background-color;
     padding-top: 60px;
@@ -23,17 +18,23 @@
     }
 }
 
+.footer-container {
+    text-align: center;
+}
+
 .footer__logo {
     margin-bottom: 20px;
 }
 
 // address
-.address-box {
-    margin-right: 93px;
+@media screen and (max-width:767px) {
+    .address-box {
+        margin-bottom: 60px;
+    }
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address__map,
@@ -58,23 +59,16 @@
 }
 
 /* join */
-
-.join {
-    margin-right: 93px;
+@media screen and (max-width:767px) {
+    .join {
+        margin-bottom: 60px;
+    }
 }
-
-
-
 
 /* subscribe */
-
-.subscribe-form {
-    display: flex;
-    align-items: flex-end;
-}
-
 .label-footer {
     display: block;
+    margin-bottom: 20px;
 
     &__input {
         display: inline-block;
@@ -106,7 +100,6 @@
         outline-offset: 0;
         border-color: $accent-color;
     }
-
 }
 
 .footer-button {
@@ -137,5 +130,45 @@
     &:focus {
         background-color: $hero-btn-hover-color;
     }
+}
 
+// tablet
+@media screen and (min-width: 768px) {
+    .footer-upper-block {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 165px;
+        margin-bottom: 60px;
+    }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        text-align: start;
+    }
+
+    .footer-upper-block {
+        display: flex;
+        align-items: baseline;
+        justify-content: start;
+        gap: 93px;
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .subscribe-form {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .label-footer {
+        margin-bottom: 0px;
+    }
 }
