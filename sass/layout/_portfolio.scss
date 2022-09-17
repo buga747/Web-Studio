@@ -58,11 +58,12 @@
 /* портфоліо */
 
 .project {
+    width: 100%;
 
-    &-set {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__link {
@@ -79,7 +80,6 @@
         }
     }
 
-
     &__thumb {
         position: relative;
         overflow: hidden;
@@ -90,8 +90,7 @@
         transform: translateY(100%);
         @include transition(transform);
 
-
-        padding: 63px 24px;
+        padding: 77px 24px;
         top: 0;
         left: 0;
         width: 100%;
@@ -102,8 +101,6 @@
         background-color: rgba(33, 150, 243, 0.9);
         color: $primary-white-color;
     }
-
-
 
     &__content {
         border: 1px solid #EEEEEE;
@@ -123,5 +120,32 @@
         line-height: 1.88;
         font-size: 16px;
         color: $secondary-text-color;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+        width: calc((100% - 30px * 1) / 2);
+
+        &-set {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__overlay-desc {
+            padding: 49px 24px 77px 24px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project {
+        width: calc((100% - 30px * 2) / 3);
+
+        &__overlay-desc {
+            padding: 63px 24px;
+        }
     }
 }

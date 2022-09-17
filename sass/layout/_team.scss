@@ -9,14 +9,21 @@
 }
 
 
+
+
 .team-list {
+
+    .team-member {
+        width: 100%;
+    }
+
     @include breakpoint-min($tablet) {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
 
         .team-member {
-            width: 354px;
+            width: calc((100% - 30px * 1) / 2);
         }
     }
 
@@ -26,7 +33,7 @@
         gap: 30px;
 
         .team-member {
-            width: 270px;
+            width: calc((100% - 30px * 3) / 4);
         }
     }
 

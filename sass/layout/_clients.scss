@@ -7,6 +7,14 @@
         @media screen and (max-width:767px) {
             width: calc((100% - 1 * 30px) / 2);
         }
+
+        @include breakpoint-min($tablet) {
+            width: calc((100% - 2 * 30px) / 3);
+        }
+
+        @include breakpoint-min($desktop) {
+            width: calc((100% - 5 * 30px) / 6);
+        }
     }
 
 
@@ -23,13 +31,7 @@
 
         @include transition-two(border-color, fill);
 
-        @include breakpoint-min($tablet) {
-            width: 226px;
-        }
 
-        @include breakpoint-min($desktop) {
-            width: 170px;
-        }
     }
 
     &__link:hover,
