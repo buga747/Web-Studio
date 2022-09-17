@@ -9,6 +9,11 @@
     opacity: 1;
 
     @include transition(opacity);
+
+    @media screen and (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .backdrop.is-hidden {
@@ -27,7 +32,7 @@
     top: 50%;
 
     display: inline-block;
-    width: 450px;
+
     padding: 40px;
 
     background: $primary-white-color;
@@ -36,6 +41,14 @@
 
     transform: translate(-50%, -50%) scale(1);
     @include transition(transform);
+
+    @media screen and(max-width:1199px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 
     &__title {
         font-size: 20px;
@@ -49,9 +62,7 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 528px;
-    }
+
 
 }
 
