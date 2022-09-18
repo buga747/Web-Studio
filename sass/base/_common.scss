@@ -3,4 +3,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+
+    @media screen and (max-width:767px) {
+        overflow-x: hidden;
+
+    }
 }
