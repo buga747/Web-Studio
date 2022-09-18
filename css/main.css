@@ -464,7 +464,6 @@ ul {
 
 .page-header {
   border-bottom: 1px solid #ECECEC;
-  position: relative;
 }
 .page-header__container {
   display: -webkit-box;
@@ -500,9 +499,7 @@ ul {
   }
   .mobile-menu {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -515,7 +512,7 @@ ul {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 5;
+    z-index: 100;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
