@@ -1371,11 +1371,6 @@ ul {
   background: #FFFFFF;
   padding: 20px 24px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project__content:first-of-type {
-    height: 146px;
-  }
-}
 .project__name {
   font-size: 18px;
   line-height: 2;
@@ -1403,6 +1398,11 @@ ul {
   }
   .project__overlay-desc {
     padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__content {
+    height: 146px;
   }
 }
 @media screen and (min-width: 1200px) {
