@@ -4,6 +4,8 @@ body {
     letter-spacing: 0.03em;
     color: $primary-text-color;
     overflow-x: scroll;
+    min-width: 320px;
+    overflow-x: scroll;
 }
 
 body.modal-open {

@@ -23,6 +23,8 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   overflow-x: scroll;
+  min-width: 320px;
+  overflow-x: scroll;
 }
 
 body.modal-open {
@@ -1316,6 +1318,9 @@ ul {
 .project__link:hover .project__overlay-desc, .project__link:focus .project__overlay-desc {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+.project__img {
+  max-width: 100%;
 }
 .project__thumb {
   position: relative;
