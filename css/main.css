@@ -597,7 +597,7 @@ ul {
   .mobile-btn:hover .mobile-btn__icon, .mobile-btn:focus .mobile-btn__icon {
     fill: #2196F3;
   }
-  .nav__item:not(:last-of-type) {
+  .nav__item {
     margin-bottom: 32px;
   }
   .contacts {
