@@ -22,9 +22,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: #212121;
-  overflow-x: scroll;
-  min-width: 320px;
-  overflow-x: scroll;
 }
 
 body.modal-open {
@@ -770,14 +767,14 @@ ul {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/mobile/hero-480@2x.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hero {
     max-width: 1199px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/desktop/hero-1200.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop/hero-1200.jpg);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/desktop/hero-1200@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop/hero-1200@2x.jpg);
@@ -796,7 +793,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767.2px) {
+@media screen and (max-width: 767px) {
   .feature-set__item:not(:last-of-type) {
     margin-bottom: 30px;
   }
@@ -1299,6 +1296,7 @@ ul {
 /* портфоліо */
 .project {
   width: 100%;
+  border: 1px solid #EEEEEE;
 }
 @media screen and (max-width: 767px) {
   .project:not(:last-child) {
@@ -1345,10 +1343,13 @@ ul {
   color: #FFFFFF;
 }
 .project__content {
-  border: 1px solid #EEEEEE;
   background: #FFFFFF;
   padding: 20px 24px;
-  padding-right: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__content:first-of-type {
+    height: 146px;
+  }
 }
 .project__name {
   font-size: 18px;

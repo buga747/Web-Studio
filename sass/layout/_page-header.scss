@@ -39,10 +39,7 @@
         &.is-open {
             transform: translateX(0);
         }
-
     }
-
-
 }
 
 .menu-social {
@@ -102,8 +99,6 @@
             fill: $accent-color;
         }
     }
-
-
 
     .nav__item:not(:last-of-type) {
         margin-bottom: 32px;

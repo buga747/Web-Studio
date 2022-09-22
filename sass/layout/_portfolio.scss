@@ -59,6 +59,7 @@
 
 .project {
     width: 100%;
+    border: 1px solid #EEEEEE;
 
     &:not(:last-child) {
         @media screen and (max-width:767px) {
@@ -107,10 +108,14 @@
     }
 
     &__content {
-        border: 1px solid #EEEEEE;
         background: $primary-white-color;
         padding: 20px 24px;
-        padding-right: 0;
+
+        &:first-of-type {
+            @media screen and (min-width:768px) and (max-width:1199px) {
+                height: 146px;
+            }
+        }
     }
 
     &__name {
