@@ -142,11 +142,12 @@
         &__overlay-desc {
             padding: 49px 24px 77px 24px;
         }
-    }
 
-    &__content {
-        @media screen and (max-width:1199px) {
-            flex-basis: 1;
+
+        &__content {
+            @media screen and (max-width:1199px) {
+                height: 146px;
+            }
         }
     }
 }
