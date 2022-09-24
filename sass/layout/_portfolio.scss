@@ -105,6 +105,16 @@
         line-height: 1.56;
         background-color: rgba(33, 150, 243, 0.9);
         color: $primary-white-color;
+
+        @media screen and (max-width:440px) {
+            padding: 30px 24px;
+        }
+
+        @media screen and (max-width:370px) {
+            padding: 20px 24px;
+            font-size: 16px;
+        }
+
     }
 
     &__content {

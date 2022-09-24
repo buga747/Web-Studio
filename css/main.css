@@ -1371,6 +1371,17 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
   color: #FFFFFF;
 }
+@media screen and (max-width: 440px) {
+  .project__overlay-desc {
+    padding: 30px 24px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .project__overlay-desc {
+    padding: 20px 24px;
+    font-size: 16px;
+  }
+}
 .project__content {
   background: #FFFFFF;
   padding: 20px 24px;
