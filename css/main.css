@@ -1378,8 +1378,9 @@ ul {
 }
 @media screen and (max-width: 370px) {
   .project__overlay-desc {
-    padding: 20px 24px;
+    padding: 16px 20px;
     font-size: 16px;
+    line-height: 1.46;
   }
 }
 .project__content {
