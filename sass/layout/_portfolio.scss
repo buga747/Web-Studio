@@ -60,6 +60,7 @@
 .project {
     width: 100%;
     border: 1px solid #EEEEEE;
+    display: flex;
 
     &:not(:last-child) {
         @media screen and (max-width:767px) {
@@ -69,6 +70,9 @@
 
     &__link {
         @include transition(box-shadow);
+
+        display: flex;
+        flex-direction: column;
 
         &:hover,
         &:focus {
@@ -119,6 +123,7 @@
     }
 
     &__content {
+        flex-grow: 1;
         background: $primary-white-color;
         padding: 20px 24px;
 
@@ -152,13 +157,6 @@
 
         &__overlay-desc {
             padding: 49px 24px 77px 24px;
-        }
-
-
-        &__content {
-            @media screen and (max-width:1199px) {
-                height: 146px;
-            }
         }
     }
 }
