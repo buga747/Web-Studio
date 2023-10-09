@@ -1,1 +1,1 @@
-# goit-markup-hw-05
+Web-studio landing page with responsive design
